@@ -25,7 +25,7 @@ class FeedbackAnalyzer:
         return NPS
 
 
-dados = pd.read_csv('Dev Week/feedbacks.csv', delimiter=';')
+dados = pd.read_csv('/Dev Week/feedbacks.csv', delimiter=';')
 
 feedbacks = [Feedback(linha['nota'], linha['comentario']) for index, linha in dados.iterrows()]
 
